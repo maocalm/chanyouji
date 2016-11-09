@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cyj.chanyouji.SearchCountryItemActivity">
+<RelativeLayout
+    android:id="@+id/id_top"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#1e90ff">
+    <ImageView
+        android:id="@+id/back"
+        android:src="@mipmap/icon_day_before_arrow"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/title"
+        android:text="日本游记"
+        android:layout_toRightOf="@id/back"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_below="@id/id_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/count"
+            android:textSize="12sp"
+            android:text="4311篇游记"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/right_spinner"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/filter_normal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+        </Spinner>
+        <Spinner
+            android:id="@+id/left_spinner"
+            android:layout_toLeftOf="@id/right_spinner"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/filter_normal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_gv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#00000000"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none"
+            />
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progressbar"
+            android:max="100"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plan_candidte_backup_bg_top"
+                />
+            <TextView
+                android:layout_below="@+id/icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备选：关西国际机场"
+                android:textSize="15sp"
+                android:textColor="#0f0f0f"/>
+
+            <ImageView
+                android:id="@+id/in"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:src="@drawable/ic_trips_arrow"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555"
+        android:textSize="15sp"
+        android:text="#国内到大阪#  从国内前往大阪的航班都降落在关西国际机场，从机场前往大阪市区可搭乘：南海电铁空港急行往返难波站（890日元、约42分钟）或关空机场巴士往返难波站（1,000日元、50分）等多种方式。"/>
+
+</LinearLayout>

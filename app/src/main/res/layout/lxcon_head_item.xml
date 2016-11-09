@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/ic_launcher"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#44555555"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image"
+            android:text="醉｜日本"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="50dp"/>
+        <TextView
+            android:id="@+id/name_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/image"
+            android:text="日式小清新体验之旅"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="50dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_poi_top_location"
+            android:layout_alignBottom="@id/image"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/photo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/des_img_press"
+            android:text="sadfadf"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@drawable/des_text_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#c0c0c0"/>
+        <TextView
+            android:id="@+id/trip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/des_yj_press"
+            android:text="sadfadf"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@drawable/des_text_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/map"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/des_map_press"
+            android:drawablePadding="10dp"
+            android:text="地图"
+            android:textColor="@drawable/des_text_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:background="#ffffff"
+        android:id="@+id/des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#555"
+
+        android:text="清水寺依山势而建的、靠数百根巨大的圆木撑起的大殿露台“清水舞台"/>
+
+    <TextView
+        android:padding="10dp"
+        android:text="实用贴士"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textColor="#0f0f0f"/>
+
+    <WebView
+        android:padding="15dp"
+        android:id="@+id/html"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搭乘市营206路8站至放。"
+        android:textColor="#0f0f0f"
+        />
+</LinearLayout>

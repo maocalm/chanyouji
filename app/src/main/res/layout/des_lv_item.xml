@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#44555555"
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日本概览 japan"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+
+    <ImageView
+        android:id="@+id/download"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:src="@drawable/download_destination_normal"
+        android:layout_alignParentRight="true"/>
+
+
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_below="@id/pic"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     >
+
+
+        <TextView
+            android:id="@+id/gl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="攻略"
+            android:textColor="@drawable/des_text_color"
+            android:gravity="center"
+            android:drawableTop="@drawable/gl"
+            />
+        <TextView
+            android:id="@+id/xc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="行程"
+            android:textColor="@drawable/des_text_color"
+            android:gravity="center"
+            android:drawableTop="@drawable/xc"
+            />
+        <TextView
+            android:id="@+id/lx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="旅行地"
+            android:textColor="@drawable/des_text_color"
+            android:gravity="center"
+            android:drawableTop="@drawable/lx"
+            />
+        <TextView
+            android:id="@+id/zt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="专题"
+            android:textColor="@drawable/des_text_color"
+            android:gravity="center"
+            android:drawableTop="@drawable/zt"
+            />
+    </LinearLayout>
+</RelativeLayout>

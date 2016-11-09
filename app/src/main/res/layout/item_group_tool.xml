@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efefef"
+    >
+
+    <TextView
+        android:id="@+id/name_zh_cn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日本"
+        android:textColor="#333"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        />
+    <ImageView
+        android:id="@+id/aw"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/expand"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+</RelativeLayout>

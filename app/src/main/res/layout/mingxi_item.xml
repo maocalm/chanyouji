@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/qita"
+        android:text="其他"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/huobi"
+        android:text="日元"
+        android:textColor="#333"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/money"
+        android:text="0.0"
+        android:textColor="#333"
+        android:layout_toLeftOf="@id/huobi"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/more_mingxi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/arrow_left_normal"
+        android:layout_alignParentRight="true"
+        android:padding="15dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/record"
+        android:layout_below="@id/qita"
+        android:text="明细"
+        android:textColor="#aaa"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/data"
+        android:layout_below="@id/record"
+        android:layout_alignParentRight="true"
+        android:text="11月5日记录"
+        android:textColor="#aaa"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/data"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+</RelativeLayout>

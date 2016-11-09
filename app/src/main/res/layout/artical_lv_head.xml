@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_url"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#000"
+            />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="氢气球旅行App"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textColor="#ffffff"/>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp">
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+
+            <ImageView
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:src="@drawable/dots_white"/>
+
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="新·蝉游记正式发布"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginTop="120dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

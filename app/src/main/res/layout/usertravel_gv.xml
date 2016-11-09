@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <ImageView
+            android:id="@+id/id_background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@color/colorPrimary"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#44555555"
+            />
+        <TextView
+            android:id="@+id/id_name"
+            android:text="山阴山阳夏未央"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/id_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-08-10"
+            android:textColor="#fff"
+            android:layout_below="@id/id_name"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/line"
+            android:layout_toRightOf="@id/id_time"
+            android:textColor="#fff"
+            android:text="/"
+            android:layout_below="@id/id_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/id_days"
+            android:layout_toRightOf="@id/line"
+            android:textColor="#fff"
+            android:text="6天,"
+            android:layout_below="@id/id_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/id_photos_count"
+            android:layout_toRightOf="@id/id_days"
+            android:textColor="#fff"
+            android:text="128图"
+            android:layout_below="@id/id_name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

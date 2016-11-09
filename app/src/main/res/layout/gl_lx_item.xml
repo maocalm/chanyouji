@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:padding="5dp"
+              >
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#054400"
+        android:text="京都请谁是"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/image_url"
+        android:layout_marginLeft="5dp"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CyjRatingBar2"
+        android:layout_toRightOf="@+id/image_url"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="6dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3.5"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="浅草寺创建于62浅草寺创建于62浅草寺创建于62浅草寺创建于62浅草寺创建于62"
+        android:layout_toRightOf="@+id/image_url"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/ratingbar"
+        android:maxLines="2"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        />
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/image_url"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_centerVertical="true"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:background="#44555555"
+        />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="915篇游记"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/background"
+        android:textColor="#fff"
+        android:background="#aa000000"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginBottom="-8dp"
+        />
+</RelativeLayout>

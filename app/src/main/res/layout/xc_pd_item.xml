@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/day"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAY1 "
+                android:textColor="#0f0f0f"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关西"
+                android:textColor="#0f0f0f"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            >
+            <LinearLayout
+                android:id="@+id/bei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/plan_note_travel"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0f0f0f"
+                    android:textSize="15sp"
+                    android:text="今日备忘"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="adsfadf"
+                android:textColor="#555"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/bei"
+                android:textSize="15sp"
+                android:padding="10dp"
+                />
+        </RelativeLayout>
+
+            <com.cyj.chanyouji.customview.ChildListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#00000000"
+                android:cacheColorHint="#00000000"
+                android:scrollbars="none"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+            </com.cyj.chanyouji.customview.ChildListView>
+
+    </LinearLayout>
+</RelativeLayout>
